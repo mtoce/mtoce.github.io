@@ -28,3 +28,4 @@ draft picks. For more background on the Astros Cheating Scandal, click [here](ht
 ## Target and Baseline
 
 The target for this problem is whether the Astros used a trash can to cheat during a batter's at-bat.
+{% include post-entry.html %} 
