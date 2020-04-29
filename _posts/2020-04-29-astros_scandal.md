@@ -31,15 +31,16 @@ The target for this problem is whether the Astros used a trash can to cheat duri
 The baseline for a binary classification problem such as this is the most frequent value in the target column.
 
 ~~~
-# has_bangs=1 when astros cheat and has_bangs=0 when they don't
-data['has_bangs'].value_counts(normalize=True)
+df['cheats'].value_counts(normalize=True)
 ~~~
 with output
 ~~~
-n    0.861977
-y    0.138023
-Name: has_bangs, dtype: float64
+0    0.855746
+1    0.144254
+Name: cheats, dtype: float64
 ~~~
+
+where 0 is not-cheating during the at-bat and 1 is cheating. This means our baseline is always guessing there is not cheating.
 
 ## Cheating by Batter
 
