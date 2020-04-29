@@ -4,8 +4,6 @@ title: Astros Cheating Scandal
 subtitle: Predicting Trash-Can Bangs
 ---
 
-#### Astros Cheating Scandal - Predicting Trash-Can Bangs
-
 ## Introduction to the Cheating Scandal
 
 The Astros Cheating Scandal is the biggest MLB scandal to date; the largest punishments ever were given out for the 
