@@ -28,5 +28,17 @@ draft picks. For more background on the Astros Cheating Scandal, click [here](ht
 ## Target and Baseline
 
 The target for this problem is whether the Astros used a trash can to cheat during a batter's at-bat.
+The baseline for a binary classification problem such as this is the most frequent value in the target column.
 
-{% include cheat_by_batter.html %};
+~~~
+# Define target as whether bangs were heard during batter's AB
+# Bangs were used by the Astros after using technology to steal signs to signal to the batter what pitch was coming
+y = 'has_bangs'
+data[y].value_counts(normalize=True)
+~~~
+
+## Cheating by Batter
+
+{% include cheat_by_batter.html %}
+
+This is an interactive graph that shows the number of at-bats where cheating was used for specific batters in the Astros' lineup. Hover over the bars in the graph to see game-specific information.
