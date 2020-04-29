@@ -1,9 +1,12 @@
 ---
 layout: post
 title: Astros Cheating Scandal
+subtitle: Predicting Trash-Can Bangs
 ---
 
-## Introduction to the Problem
+#### Astros Cheating Scandal - Predicting Trash-Can Bangs
+
+## Introduction to the Cheating Scandal
 
 The Astros Cheating Scandal is the biggest MLB scandal to date; the largest punishments ever were given out for the 
 unprofessional behavior and actions of the team in the 2017 and 2018 seasons. Just to recap the scandal for anyone unaware, 
@@ -22,4 +25,6 @@ to strip away the trophy, but handed out extreme punishments for the club:
 While no players were directly suspended, the Astros Club is taking a huge setback by losing it's management and losing these 
 draft picks. For more background on the Astros Cheating Scandal, click [here](https://www.si.com/mlb/2020/01/13/houston-astros-cheating-punishment).
 
-{% include cheat_by_batter.html %} 
+## Target and Baseline
+
+The target for this problem is whether the Astros used a trash can to cheat during a batter's at-bat.
