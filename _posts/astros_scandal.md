@@ -1,3 +1,8 @@
+---
+layout: post
+title: Astros Cheating Scandal
+---
+
 ## Introduction to the Problem
 
 The Astros Cheating Scandal is the biggest MLB scandal to date; the largest punishments ever were given out for the 
