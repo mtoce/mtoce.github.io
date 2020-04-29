@@ -17,4 +17,4 @@ to strip away the trophy, but handed out extreme punishments for the club:
 While no players were directly suspended, the Astros Club is taking a huge setback by losing it's management and losing these 
 draft picks. For more background on the Astros Cheating Scandal, click [here](https://www.si.com/mlb/2020/01/13/houston-astros-cheating-punishment).
 
-
+{% include cheat_by_batter.html %} 
