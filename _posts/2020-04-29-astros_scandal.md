@@ -31,10 +31,14 @@ The target for this problem is whether the Astros used a trash can to cheat duri
 The baseline for a binary classification problem such as this is the most frequent value in the target column.
 
 ~~~
-# Define target as whether bangs were heard during batter's AB
-# Bangs were used by the Astros after using technology to steal signs to signal to the batter what pitch was coming
-y = 'has_bangs'
-data[y].value_counts(normalize=True)
+# has_bangs=1 when astros cheat and has_bangs=0 when they don't
+data['has_bangs'].value_counts(normalize=True)
+~~~
+with output
+~~~
+n    0.861977
+y    0.138023
+Name: has_bangs, dtype: float64
 ~~~
 
 ## Cheating by Batter
