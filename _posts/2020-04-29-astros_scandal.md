@@ -52,4 +52,4 @@ Since the two classes are so imbalanced, accuracy is not a good choice for model
 
 Since the issue is binary classification, I chose a Logistic Regression for my linear based model and a Random Forest Classifier for my tree-based model. Cross-validation with 5-folds for both techniques was used to ensure the models are reproduceable. Since most of the features are categorical, I used the "mode" imputer strategy. For the encoding strategy, features were encoded ordinally for the forest and one-hot-encoded for the Logistic Regression. A few of the one-hot features probably had strong linear relationships with the target as opposed to the forest. However, the forest was much better at actually predicting the target.
 
-![https://raw.githubusercontent.com/mtoce/Build2-Project/master/roc_auc.png](image)
+![ROC_AUC](https://raw.githubusercontent.com/mtoce/Build2-Project/master/roc_auc.png)
