@@ -52,19 +52,13 @@ Since the two classes are so imbalanced, accuracy is not a good choice for model
 
 Since the issue is binary classification, I chose a Logistic Regression for my linear based model and a Random Forest Classifier for my tree-based model. Cross-validation with 5-folds for both techniques was used to ensure the models are reproduceable. Since most of the features are categorical, I used the "mode" imputer strategy. For the encoding strategy, features were encoded ordinally for the forest and one-hot-encoded for the Logistic Regression. A few of the one-hot features probably had strong linear relationships with the target as opposed to the forest.
 
-I used RandomSearchCV for hyperparameter tuning my forest, and got the following results for parameters:
-
-~~~
-RF: Best hyperparameters:  {'simpleimputer__strategy': 'most_frequent', 'selectkbest__k': 10, 'randomforestclassifier__oob_score': True, 'randomforestclassifier__n_estimators': 300, 'randomforestclassifier__min_samples_split': 10, 'randomforestclassifier__min_samples_leaf': 2, 'randomforestclassifier__max_leaf_nodes': None, 'randomforestclassifier__max_depth': 32, 'randomforestclassifier__criterion': 'entropy'}
-~~~
-
 ![ROC_AUC](https://raw.githubusercontent.com/mtoce/Build2-Project/master/roc_auc.png)
 
 As the graph clearly shows, the Random Forest Classifier was much more robust model, beating out both our baseline and Logistic Regression.
 
----
-
----
+| Random Forest | Logistic Regression  | Baseline |
+|:-:|:-:|:-:|
+| 0.903 | 0.689 | 0.500  |
 
 ## A Closer Look at Precision, Recall, and the Confusion Matrix
 
