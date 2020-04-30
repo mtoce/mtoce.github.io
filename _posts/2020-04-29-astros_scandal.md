@@ -91,5 +91,8 @@ The confusion matrix is a very useful tool for visualizing the recall and precis
 
 ![Confusion_Matrix](https://raw.githubusercontent.com/mtoce/Build2-Project/master/cmatrix.png)
 
-This confusion matrix shows that the model is 97% accurate at predicting when the Astros cheat when they are actually cheating.  
-However, when they are not cheating the model is 50/50. 
+This confusion matrix shows that the model is 97% accurate at predicting when the Astros cheat when they are actually cheating. However, when they are not cheating the model is 50/50. In a real-world scenario, using this model would result in us incorrectly assuming they are cheating in many cases. This really isn't the worst outcome if we are an opposing team trying to protect our signs and pitcher.
+
+## Final Conclusions
+
+It is imperative that we understand the drawbacks of our model, however. The 50/50 coin flip when the opposing team is not cheating is certainly a flaw in the model. It most likely comes from the team cheating more often on specific days rather than others. I chose to not include the specific game date, believing it to contain data leakage about the target.
