@@ -36,7 +36,7 @@ Name: cheats, dtype: float64
 
 where 0 is not-cheating during the at-bat and 1 is cheating. This means our baseline is always guessing there is not cheating.
 
-{% include cheat_by_batter.html %}
+{% include cheat_by_batter.html %};
 
 This is an interactive graph that shows the number of at-bats where cheating was used for specific batters in the Astros' lineup. Hover over the bars in the graph to see game-specific information.
 
