@@ -55,7 +55,7 @@ Since the issue is binary classification, I chose a Logistic Regression for my l
 ![ROC_AUC](https://raw.githubusercontent.com/mtoce/Build2-Project/master/roc_auc.png)
 </center> -->
 
-As the graph clearly shows, the Random Forest Classifier was much more robust model, beating out both our baseline and Logistic Regression.
+As the graph shows, the Random Forest Classifier is a more robust model, beating out both the Logistic Regression andm baseline models.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;}
@@ -70,20 +70,22 @@ As the graph clearly shows, the Random Forest Classifier was much more robust mo
 <center>
 <table class="tg">
   <tr>
-    <th class="tg-amwm" colspan="3">ROC-AUC Score for Models and Baseline</th>
+    <th class="tg-amwm" colspan="3">ROC-AUC Score</th>
   </tr>
   <tr>
-    <td class="tg-ezbu">  Random Forest Classifier  </td>
-    <td class="tg-ezbu">  Logistic Regression  </td>
-    <td class="tg-ezbu">  Baseline  </td>
+    <td class="tg-ezbu">&nbsp;Random Forest Classifier&nbsp;</td>
+    <td class="tg-ezbu">&nbsp;Logistic Regression&nbsp;</td>
+    <td class="tg-ezbu">&nbsp;Baseline&nbsp;</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">  0.903  </td>
-    <td class="tg-c3ow">  0.689  </td>
-    <td class="tg-c3ow">  0.5  </td>
+    <td class="tg-c3ow">&nbsp;0.903&nbsp;</td>
+    <td class="tg-c3ow">&nbsp;0.689&nbsp;</td>
+    <td class="tg-c3ow">&nbsp;0.5&nbsp;</td>
   </tr>
 </table>
 </center>
+
+
 
 ## A Closer Look at Precision, Recall with the Confusion Matrix
 
