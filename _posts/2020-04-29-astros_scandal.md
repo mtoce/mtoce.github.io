@@ -51,11 +51,8 @@ Since the issue is binary classification, I chose a Logistic Regression for my l
 <p align="center">
   <img src="https://raw.githubusercontent.com/mtoce/Build2-Project/master/roc_auc.png">
 </p>
-<!-- <center>
-![ROC_AUC](https://raw.githubusercontent.com/mtoce/Build2-Project/master/roc_auc.png)
-</center> -->
 
-As the graph shows, the Random Forest Classifier is a more robust model, beating out both the Logistic Regression andm baseline models.
+As the graph shows, the Random Forest Classifier is a more robust model, beating out both the Logistic Regression and baseline models.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;}
@@ -64,7 +61,7 @@ As the graph shows, the Random Forest Classifier is a more robust model, beating
 .tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:1px;color:#fdf6e3;
   font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-ezbu{background-color:#eee8d5;border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top;font-weight:bold}
 .tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
 </style>
 <center>
