@@ -46,7 +46,7 @@ Since the two classes are so imbalanced, accuracy is not a good choice for model
 
 ## Model Choice and Results
 
-Since the issue is binary classification, I chose a Logistic Regression for my linear based model and a Random Forest Classifier for my tree-based model. Cross-validation with 5-folds for both techniques was used to ensure the models are reproduceable. Since most of the features are categorical, I used the "mode" imputer strategy. For the encoding strategy, features were encoded ordinally for the forest and one-hot-encoded for the Logistic Regression. A few of the one-hot features probably had strong linear relationships with the target as opposed to the forest.
+Since the issue is binary classification, I chose a Logistic Regression for my linear based model and a Random Forest Classifier for my tree-based model. Cross-validation with 5-folds for both techniques was used to ensure the models are reproduceable. Since most of the features are categorical, I used the "mode" imputer strategy. For the encoding strategy, features were encoded ordinally for the forest and one-hot-encoded for the Logistic Regression. A few of the one-hot features probably had strong linear relationships with the target.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/mtoce/Build2-Project/master/roc_auc.png">
@@ -94,4 +94,4 @@ This confusion matrix shows that the model is 97% accurate at predicting when th
 
 ## Final Conclusions
 
-It is imperative that we understand the drawbacks of our model, however. The 50/50 coin flip when the opposing team is not cheating is certainly a flaw in the model. It most likely comes from the team cheating more often on specific days rather than others. I chose to not include the specific game date, believing it to contain data leakage about the target.
+The Random Forest Classifier used in this project is certainly robust and fairly reproduceable for this scandal. However, how reproduceable would the model be given entirely different data? I think the model likely slightly overfit the specific data for the problem, in this case. Also, since the target was only recorded for the batter's entire at-bat instead of each pitch, the model can fall short in terms of when an opponent might cheat **during** an at-bat. Also, the 50/50 coin flip when the opposing team is not cheating is certainly another flaw in the model. It most likely comes from the team cheating more often on specific days rather than others. I chose to not include the specific game date, believing it to contain data leakage about the target.
