@@ -73,6 +73,7 @@ As the graph clearly shows, the Random Forest Classifier was much more robust mo
 .tg .tg-ezbu{background-color:#eee8d5;border-color:inherit;text-align:center;vertical-align:top}
 .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
 </style>
+<center>
 <table class="tg">
   <tr>
     <th class="tg-1wig" colspan="3">ROC-AUC Score for Models and Baseline</th>
@@ -88,7 +89,7 @@ As the graph clearly shows, the Random Forest Classifier was much more robust mo
     <td class="tg-c3ow">0.5</td>
   </tr>
 </table>
-
+</center>
 ## A Closer Look at Precision, Recall with the Confusion Matrix
 
 ![Confusion_Matrix](https://raw.githubusercontent.com/mtoce/Build2-Project/master/cmatrix.png)
