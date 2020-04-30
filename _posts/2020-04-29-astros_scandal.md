@@ -72,14 +72,14 @@ As the graph clearly shows, the Random Forest Classifier was much more robust mo
     <th class="tg-amwm" colspan="3">ROC-AUC Score for Models and Baseline</th>
   </tr>
   <tr>
-    <td class="tg-ezbu">Random Forest Classifier</td>
-    <td class="tg-ezbu">Logistic Regression</td>
-    <td class="tg-ezbu">Baseline</td>
+    <td class="tg-ezbu">  Random Forest Classifier  </td>
+    <td class="tg-ezbu">  Logistic Regression  </td>
+    <td class="tg-ezbu">  Baseline  </td>
   </tr>
   <tr>
-    <td class="tg-c3ow">0.903</td>
-    <td class="tg-c3ow">0.689</td>
-    <td class="tg-c3ow">0.5</td>
+    <td class="tg-c3ow">  0.903  </td>
+    <td class="tg-c3ow">  0.689  </td>
+    <td class="tg-c3ow">  0.5  </td>
   </tr>
 </table>
 </center>
