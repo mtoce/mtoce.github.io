@@ -57,15 +57,11 @@ Since the issue is binary classification, I chose a Logistic Regression for my l
 As the graph clearly shows, the Random Forest Classifier was much more robust model, beating out both our baseline and Logistic Regression.
 
   
-> ROC_AUC Score For Models and Baseline
-
-<center>
+ROC_AUC Score For Models and Baseline
   
 | Random Forest | Logistic Regression  | Baseline |
 |      :-:      |          :-:         |    :-:   |
 |     0.903     |         0.689        |  0.500   |
-
-</center>
 
 ## A Closer Look at Precision, Recall, and the Confusion Matrix
 
