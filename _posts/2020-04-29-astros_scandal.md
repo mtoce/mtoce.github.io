@@ -36,7 +36,7 @@ Name: cheats, dtype: float64
 
 where 0 is not-cheating during the at-bat and 1 is cheating. This means our baseline is always guessing there is not cheating.
 
-{% include cheat_by_batter.html %};
+{% include cheat_by_batter.html %}
 
 This is an interactive graph that shows the number of at-bats where cheating was used for specific batters in the Astros' lineup. Hover over the bars in the graph to see game-specific information.
 
@@ -90,4 +90,4 @@ As the graph clearly shows, the Random Forest Classifier was much more robust mo
 ![Confusion_Matrix](https://raw.githubusercontent.com/mtoce/Build2-Project/master/cmatrix.png)
 
 This confusion matrix shows that the model is 97% accurate at predicting when the Astros cheat when they are actually cheating.  
-However, when they are not cheating the model is 
+However, when they are not cheating the model is 50/50. 
