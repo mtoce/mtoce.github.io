@@ -64,31 +64,30 @@ As the graph clearly shows, the Random Forest Classifier was much more robust mo
 |     0.903     |         0.689        |  0.500   |
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;}
+.tg td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:1px;color:#002b36;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:1px;color:#fdf6e3;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-ezbu{background-color:#eee8d5;border-color:inherit;text-align:center;vertical-align:top}
 .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
 </style>
-<center>
 <table class="tg">
   <tr>
-    <th class="ROC_AUC Score For Models and Baseline" colspan="3"></th>
+    <th class="tg-1wig" colspan="3">ROC-AUC Score for Models and Baseline</th>
   </tr>
   <tr>
-    <td class="Random Forest"></td>
-    <td class="Logistic Regression"></td>
-    <td class="Baseline"></td>
+    <td class="tg-ezbu">Random Forest Classifier</td>
+    <td class="tg-ezbu">Logistic Regression</td>
+    <td class="tg-ezbu">Baseline</td>
   </tr>
   <tr>
-    <td class="0.903"></td>
-    <td class="0.689"></td>
-    <td class="0.500"></td>
+    <td class="tg-c3ow">0.903</td>
+    <td class="tg-c3ow">0.689</td>
+    <td class="tg-c3ow">0.5</td>
   </tr>
 </table>
-</center>
 
 ## A Closer Look at Precision, Recall with the Confusion Matrix
 
