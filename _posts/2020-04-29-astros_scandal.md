@@ -69,7 +69,7 @@ As the graph clearly shows, the Random Forest Classifier was much more robust mo
 <center>
 <table class="tg">
   <tr>
-    <th class="tg-1wig" colspan="3">ROC-AUC Score for Models and Baseline</th>
+    <th class="tg-amwm" colspan="3">ROC-AUC Score for Models and Baseline</th>
   </tr>
   <tr>
     <td class="tg-ezbu">Random Forest Classifier</td>
