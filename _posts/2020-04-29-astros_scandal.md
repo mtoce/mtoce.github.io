@@ -44,6 +44,12 @@ where 0 is not-cheating during the at-bat and 1 is cheating. This means our base
 
 This is an interactive graph that shows the number of at-bats where cheating was used for specific batters in the Astros' lineup. Hover over the bars in the graph to see game-specific information.
 
-## Class Imbalance and Choice of Score Metric for Model
+## Class Imbalance and Choice of Model Score Metric
 
 Since the two classes are so imbalanced, accuracy is not a good choice for model scoring, therefore I chose to use the Area Under the Receiver Operator Characteristic Curve, also known as roc_auc. The ROC is a perfect metric because it tells us how much model is capable of being distinguished between classes.
+
+## Model Choice and Results
+
+Since the issue is binary classification, I chose a Logistic Regression for my linear based model and a Random Forest Classifier for my tree-based model. Cross-validation with 5-folds for both techniques was used to ensure the models are reproduceable. Since most of the features are categorical, I used the "mode" imputer strategy. For the encoding strategy, features were encoded ordinally for the forest and one-hot-encoded for the Logistic Regression. A few of the one-hot features probably had strong linear relationships with the target as opposed to the forest. However, the forest was much better at actually predicting the target.
+
+![https://raw.githubusercontent.com/mtoce/Build2-Project/master/roc_auc.png](image)
