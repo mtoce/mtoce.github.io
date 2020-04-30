@@ -65,7 +65,7 @@ As the graph clearly shows, the Random Forest Classifier was much more robust mo
 |:-------------:|:--------------------:|:--------:|
 |     0.903     |         0.689        |  0.500   |
 
-<\center>
+</center>
 
 ## A Closer Look at Precision, Recall, and the Confusion Matrix
 
