@@ -62,7 +62,7 @@ As the graph clearly shows, the Random Forest Classifier was much more robust mo
 <center>
   
 | Random Forest | Logistic Regression  | Baseline |
-|:-------------:|:--------------------:|:--------:|
+|      :-:      |          :-:         |    :-:   |
 |     0.903     |         0.689        |  0.500   |
 
 </center>
