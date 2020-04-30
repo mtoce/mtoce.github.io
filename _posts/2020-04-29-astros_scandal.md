@@ -23,9 +23,11 @@ The baseline for a binary classification problem such as this is the most freque
 ~~~
 df['cheats'].value_counts(normalize=True)
 ~~~
+
 <center>
 *with output*
 </center>
+
 ~~~
 0    0.855746
 1    0.144254
