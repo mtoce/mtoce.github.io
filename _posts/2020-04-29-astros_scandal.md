@@ -75,9 +75,9 @@ As the graph shows, the Random Forest Classifier is a more robust model, beating
     <td class="tg-ezbu">&nbsp;Baseline&nbsp;</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">&nbsp;0.903&nbsp;</td>
-    <td class="tg-c3ow">&nbsp;0.689&nbsp;</td>
-    <td class="tg-c3ow">&nbsp;0.5&nbsp;</td>
+    <td class="tg-c3ow">&nbsp;0.929&nbsp;</td>
+    <td class="tg-c3ow">&nbsp;0.675&nbsp;</td>
+    <td class="tg-c3ow">&nbsp;0.500&nbsp;</td>
   </tr>
 </table>
 </center>
@@ -94,4 +94,4 @@ This confusion matrix shows that the model is 97% accurate at predicting when th
 
 ## Final Conclusions
 
-The Random Forest Classifier used in this project is certainly robust and fairly reproduceable for this scandal. However, how reproduceable would the model be given entirely different data? I think the model likely slightly overfit the specific data for the problem, in this case. Also, since the target was only recorded for the batter's entire at-bat instead of each pitch, the model can fall short in terms of when an opponent might cheat **during** an at-bat. Also, the 50/50 coin flip when the opposing team is not cheating is certainly another flaw in the model. It most likely comes from the team cheating more often on specific days rather than others. I chose to not include the specific game date, believing it to contain data leakage about the target.
+The Random Forest Classifier used in this project is certainly robust and fairly reproduceable for this scandal. However, how reproduceable would the model be given entirely different data? I think the model likely slightly overfit the specific data for the problem, in this case. Also, since the target was only recorded for the batter's entire at-bat instead of each pitch, the model can fall short in terms of when an opponent might cheat **during** an at-bat.
