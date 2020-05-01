@@ -96,9 +96,11 @@ This confusion matrix shows that the model is 97% correct when predicting the As
   <img src="https://raw.githubusercontent.com/mtoce/Build2-Project/master/permutation_importances.png">
 </p>
 
-## Final Conclusions
+The permutation importances for the random forest classifier are shown above. There were features which had no affect on the model, likely because they were not related to the game-state during the at-bat, such as at_bat_event. On_3b, a feature which describes if there is a runner on third, actually confused the model, contributing a negative permutation importance, which is quite interesting. 
 
-The Random Forest Classifier used in this project is certainly robust and fairly reproduceable for this scandal. However, how reproduceable would the model be given entirely different data? I think the model likely slightly overfit the specific data for the problem, in this case. Also, since the target was only recorded for the batter's entire at-bat instead of each pitch, the model can fall short in terms of when an opponent might cheat **during** an at-bat.
+
+These permutation importances are useful because they help paint a picture of the game-state when cheating occurs. Thus, they are useful for preventing these underhanded tactics in the future by making umpires more aware of the situations in which cheating is likely to occur.
+
 
 ## Additional Background on the Cheating Scandal
 
