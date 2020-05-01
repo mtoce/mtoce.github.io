@@ -58,6 +58,13 @@ chart = alt.Chart(batter_cheats,
         'runners_on_base', 'at_bat_event']).interactive()
 ~~~
 
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/mtoce/Build2-Project/master/batavg_diff.png">
+</p>
+                                                                                        
+This image shows how the cheating affected each batter's average. Surprisingly, the team's batting average was worse when using their underhanded methods. Maybe cheating caused some anxiety that affected the batter's mental.                                                                                       
+
 ## Model Choice and Results
 
 Since the issue is binary classification, I chose a Logistic Regression for my linear based model and a Random Forest Classifier for my tree-based model. Cross-validation with 5-folds for both techniques was used to ensure the models are reproduceable. For the encoding strategy, features were encoded ordinally for the forest and one-hot-encoded for the Logistic Regression. A few of the one-hot features probably had strong linear relationships with the target.
