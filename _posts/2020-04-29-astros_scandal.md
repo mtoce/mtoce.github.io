@@ -43,16 +43,16 @@ This is an interactive graph that shows where cheating was used for batters in t
 
 ~~~
 chart = alt.Chart(batter_cheats,
-    title="Astros Sign Stealing by Batter (2017 Season)", 
-    width=600, height=400).mark_bar().encode(
-        alt.X('game_date', title='Game Date', 
-            axis=alt.Axis(titleFont="Helvetica Neue")),
-        alt.Y('cheats', title='Cheating During At-Bat', 
-            axis=alt.Axis(titleFont="Helvetica Neue")),
-        alt.Color('batter', title='Batter', scale=alt.Scale(
-                domain=batter_list,
-                range=color_list)),
-        tooltip=['batter', 'opponent', 'pitch_category', 'pitch_type_code', 
+    title = "Astros Sign Stealing by Batter (2017 Season)", 
+    width = 600, height = 400).mark_bar().encode(
+        alt.X('game_date', title = 'Game Date', 
+            axis = alt.Axis(titleFont = "Helvetica Neue")),
+        alt.Y('cheats', title = 'Cheating During At-Bat', 
+            axis = alt.Axis(titleFont = "Helvetica Neue")),
+        alt.Color('batter', title = 'Batter', scale = alt.Scale(
+                domain = batter_list,
+                range = color_list)),
+        tooltip = ['batter', 'opponent', 'pitch_category', 'pitch_type_code', 
         'runners_on_base', 'at_bat_event']).interactive()
 ~~~
 
