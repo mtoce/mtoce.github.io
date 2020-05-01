@@ -29,7 +29,7 @@ Name: cheats, dtype: float64
 ~~~
 <center>
   
-*Where 1 is cheating and 0 is not cheating*
+<i> Where 1 is cheating and 0 is not cheating </i>
 </center>
 
 This means our baseline is the value of the most frequent class, always predicting 0, or not cheating.
