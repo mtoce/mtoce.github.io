@@ -110,6 +110,7 @@ This confusion matrix shows that the model is 97% correct when predicting the As
 By using the non-normalized confusion matrix, we can calculate the model's precision and recall scores. These two metrics are another option for score metrics for imbalanced classes.
 
 > Random Forest:  Precision = 0.953
+
 > Random Forest:  Recall = 0.956
 
 ## Model Permutation Importances
