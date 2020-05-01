@@ -33,28 +33,24 @@ Name: cheats, dtype: float64
 
 <center>
   
-<i> Where 1 is cheating and 0 is not cheating </i>
+<i> where 1 is cheating and 0 is not cheating </i>
 </center>
 
 This means our baseline is the value of the most frequent class, always predicting 0, or not cheating.
 
 {% include cheat_by_batter.html %}
 
-This is an interactive graph that shows the number of at-bats where cheating was used for specific batters in the Astros' lineup. Hover over the bars in the graph to see game-specific information.
-
-## Class Imbalance & Choice of Model Score Metric
-
-Since the two classes are so imbalanced, accuracy is not a good choice for model scoring, therefore I chose to use the Area Under the Receiver Operator Characteristic Curve, also known as roc_auc. The ROC is a perfect metric because it tells us how much model is capable of being distinguished between classes.
+This is an interactive graph that shows where cheating was used for batters in the Astros' lineup. Hover over the bars in the graph to see game-state information.
 
 ## Model Choice and Results
 
-Since the issue is binary classification, I chose a Logistic Regression for my linear based model and a Random Forest Classifier for my tree-based model. Cross-validation with 5-folds for both techniques was used to ensure the models are reproduceable. Since most of the features are categorical, I used the "mode" imputer strategy. For the encoding strategy, features were encoded ordinally for the forest and one-hot-encoded for the Logistic Regression. A few of the one-hot features probably had strong linear relationships with the target.
+Since the issue is binary classification, I chose a Logistic Regression for my linear based model and a Random Forest Classifier for my tree-based model. Cross-validation with 5-folds for both techniques was used to ensure the models are reproduceable. For the encoding strategy, features were encoded ordinally for the forest and one-hot-encoded for the Logistic Regression. A few of the one-hot features probably had strong linear relationships with the target.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/mtoce/Build2-Project/master/roc_auc.png">
 </p>
 
-As the graph shows, the Random Forest Classifier is a more robust model, beating out both the Logistic Regression and baseline models.
+As the graph shows, the Random Forest Classifier is a more robust model in terms of roc_auc score, beating out both the Logistic Regression and baseline models.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
@@ -85,13 +81,17 @@ As the graph shows, the Random Forest Classifier is a more robust model, beating
 </table>
 </center>
 
-## A Closer Look at Precision, Recall with the Confusion Matrix
+## A Closer Look at Precision & Recall with the Confusion Matrix
 
 The confusion matrix is a very useful tool for visualizing the recall and precision of a model. In this case of imbalanced classes, it makes understanding our model much easier.
 
 ![Confusion_Matrix](https://raw.githubusercontent.com/mtoce/Build2-Project/master/cmatrix.png)
 
-This confusion matrix shows that the model is 97% accurate at predicting when the Astros cheat when they are actually cheating. However, when they are not cheating the model is 50/50. In a real-world scenario, using this model would result in us incorrectly assuming they are cheating in many cases. This really isn't the worst outcome if we are an opposing team trying to protect our signs and pitcher.
+This confusion matrix shows that the model is 97% correct when predicting the Astros cheat when they are actually cheating. However, when they are not cheating the model is only 67% correct. In a real-world scenario, using this model would result in us incorrectly assuming they are cheating in many cases. This is not the worst outcome if we are an opposing team trying to protect our signs and pitcher, or even if we are an umpire trying to protect game integrity.
+
+## Model Permutation Importances
+
+
 
 ## Final Conclusions
 
