@@ -96,7 +96,7 @@ As the graph shows, the Random Forest Classifier is a more robust model in terms
 </table>
 </center>
 
-## A Closer Look at Precision & Recall with the Confusion Matrix
+## Precision, Recall and the Confusion Matrix
 
 The confusion matrix is a very useful tool for visualizing the recall and precision of a model. In this case of imbalanced classes, it makes understanding our model much easier.
 
@@ -105,6 +105,12 @@ The confusion matrix is a very useful tool for visualizing the recall and precis
 </p>
 
 This confusion matrix shows that the model is 97% correct when predicting the Astros cheat when they are actually cheating. However, when they are not cheating the model is only 67% correct. In a real-world scenario, using this model would result in us incorrectly assuming they are cheating in many cases. This is not the worst outcome if we are an opposing team trying to protect our signs and pitcher, or even if we are an umpire trying to protect game integrity.
+
+
+By using the non-normalized confusion matrix, we can calculate the model's precision and recall scores. These two metrics are another option for score metrics for imbalanced classes.
+
+> Forest Precision = 0.953
+> Forest Recall = 0.956
 
 ## Model Permutation Importances
 
