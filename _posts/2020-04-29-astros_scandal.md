@@ -19,7 +19,7 @@ df['cheats'].value_counts(normalize=True)
 
 <center>
   
-*with output*
+<i> with output </i>
 </center>
 
 ~~~
