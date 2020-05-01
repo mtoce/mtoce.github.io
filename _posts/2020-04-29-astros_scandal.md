@@ -4,16 +4,9 @@ title: Astros Cheating Scandal
 subtitle: Using Game State to Predict Cheating
 ---
 
-## Introduction to the Cheating Scandal
+## Abstract
 
-The Astros Cheating Scandal is the biggest MLB scandal to date; the largest punishments ever were given out for the unprofessional behavior and actions of the team in the 2017 and 2018 seasons. Just to recap the scandal for anyone unaware, the Astros used HD cameras to steal the signs the catcher gives the pitcher, along with other methods. The camera feed was live-streamed to their dugout, where they would bang a trash can signaling their hitter what type of pitch would come next (fastball or off-speed). A simple advantage like this can go a huge way in baseball, where the best hitters in the game hit **.300** and an average player hits **.250**. Hitting a baseball at the MLB level is extremely difficult, so every advantage the hitter can get goes a long way. Considering the Astros used this underhanded tactic during the 2017 season when they won the World Series Trophy, it was hotly debated whether their trophy should be stripped from them. The commisioner decided not to strip away the trophy, but handed out extreme punishments for the club: 
-
--   _**Suspended** Manager AJ Hinch and General Manager Jeff Luhnow for one year **(Astros owner Jim Crane has since fired both)**_
--   _**1st & 2nd** round picks for **2020 & 2021** were stripped from team_
--   _Fined **$5 million**, the max amount allowed under MLB Constitution_
-
-While no players were directly suspended, the Astros Club is taking a huge setback by losing it's management and losing these 
-draft picks. For more background on the Astros Cheating Scandal, click [here](https://www.si.com/mlb/2020/01/13/houston-astros-cheating-punishment).
+The Astros sign-stealing scandal has sparked huge debate and discussion in the MLB community. The Astros used HD cameras to steal the opposing catcher's signs and live-streamed them to their dugout, where they would bang on a trash can to signal whether an off-speed pitch or fastball was coming next. This project attempts to predict whether the Astros will cheat using this method based on the state of the game. In an attempt to minimize data leakage, I removed the game date from the data fed to the models, since the team was much more likely to cheat on specific days for no apparent reason, with the goal is to keep the models fairly general so they are future proofed. Since the problem is a binary classification problem, two models were fitted: Logistic Regression and Random Forest Classifier. Both models used cross-validation with $cv = 5$. Since the classes are imbalanced, and accuracy is less trustworthy, the score metric I chose to report is the area under the receiver operator characteristic curve, or ROC_AUC. 
 
 ## Target and Baseline
 
@@ -25,6 +18,7 @@ df['cheats'].value_counts(normalize=True)
 ~~~
 
 <center>
+  
 *with output*
 </center>
 
@@ -94,3 +88,14 @@ This confusion matrix shows that the model is 97% accurate at predicting when th
 ## Final Conclusions
 
 The Random Forest Classifier used in this project is certainly robust and fairly reproduceable for this scandal. However, how reproduceable would the model be given entirely different data? I think the model likely slightly overfit the specific data for the problem, in this case. Also, since the target was only recorded for the batter's entire at-bat instead of each pitch, the model can fall short in terms of when an opponent might cheat **during** an at-bat.
+
+## Additional Background on the Cheating Scandal
+
+The Astros Cheating Scandal is the biggest MLB scandal to date; the largest punishments ever were given out for the unprofessional behavior and actions of the team in the 2017 and 2018 seasons. Just to recap the scandal for anyone unaware, the Astros used HD cameras to steal the signs the catcher gives the pitcher, along with other methods. The camera feed was live-streamed to their dugout, where they would bang a trash can signaling their hitter what type of pitch would come next (fastball or off-speed). A simple advantage like this can go a huge way in baseball, where the best hitters in the game hit **.300** and an average player hits **.250**. Hitting a baseball at the MLB level is extremely difficult, so every advantage the hitter can get goes a long way. Considering the Astros used this underhanded tactic during the 2017 season when they won the World Series Trophy, it was hotly debated whether their trophy should be stripped from them. The commisioner decided not to strip away the trophy, but handed out extreme punishments for the club: 
+
+-   _**Suspended** Manager AJ Hinch and General Manager Jeff Luhnow for one year (Astros owner Jim Crane has since **fired both**)_
+-   _**1st & 2nd** round picks for **2020 & 2021** were stripped from team_
+-   _Fined **$5 million**, the max amount allowed under MLB Constitution_
+
+While no players were directly suspended, the Astros Club is taking a huge setback by losing it's management and losing these 
+draft picks. For more background on the Astros Cheating Scandal, click [here](https://www.si.com/mlb/2020/01/13/houston-astros-cheating-punishment).
