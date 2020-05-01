@@ -17,16 +17,20 @@ The baseline for a binary classification problem such as this is the most freque
 df['cheats'].value_counts(normalize=True)
 ~~~
 
+
 <center>
   
 <i> with output </i>
 </center>
+
 
 ~~~
 0    0.855746
 1    0.144254
 Name: cheats, dtype: float64
 ~~~
+
+
 <center>
   
 <i> Where 1 is cheating and 0 is not cheating </i>
