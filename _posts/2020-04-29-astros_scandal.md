@@ -109,9 +109,32 @@ This confusion matrix shows that the model is 97% correct when predicting the As
 
 By using the non-normalized confusion matrix, we can calculate the model's precision and recall scores. These two metrics are another option for score metrics for imbalanced classes.
 
-> Random Forest:  Precision = 0.953
-
-> Random Forest:  Recall = 0.956
+<style type="text/css">
+.tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+.tg td{background-color:#fff;border-bottom-width:1px;border-color:#ccc;border-style:solid;border-top-width:1px;
+  border-width:0px;color:#333;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;
+  word-break:normal;}
+.tg th{background-color:#f0f0f0;border-bottom-width:1px;border-color:#ccc;border-style:solid;border-top-width:1px;
+  border-width:0px;color:#333;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;
+  padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+</style>
+<center>
+<table class="tg">
+  <tr>
+    <th class="tg-7btt" colspan="2">Random Forest Model</th>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">&nbsp;Precision&nbsp;</td>
+    <td class="tg-c3ow">&nbsp;Recall&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="tg-c3ow">&nbsp;0.953&nbsp;</td>
+    <td class="tg-c3ow">&nbsp;0.956&nbsp;</td>
+  </tr>
+</table>
+</center>
 
 ## Model Permutation Importances
 
