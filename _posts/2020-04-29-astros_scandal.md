@@ -6,7 +6,7 @@ subtitle: Using Game State to Predict Cheating
 
 ## Abstract
 
-The Astros sign-stealing scandal has sparked huge debate and discussion in the MLB community. The Astros used HD cameras to steal the opposing catcher's signs and live-streamed them to their dugout, where they would bang on a trash can to signal whether an off-speed pitch or fastball was coming next. This project attempts to predict whether the Astros will cheat using this method based on the state of the game. The hope is that these models will not only be able to predict cheating, but also provide the most impactful game conditions to warrant cheating. In an attempt to minimize data leakage, I removed the game date from the data fed to the models, since the team was much more likely to cheat on specific days for no apparent reason, with the goal is to keep the models fairly general so they are future proofed. Since the problem is a binary classification problem, two models were fitted: Logistic Regression and Random Forest Classifier. Both models used cross-validation with 5-folds. Since the classes are imbalanced, and accuracy is less trustworthy, the score metric I chose to report is the area under the receiver operator characteristic curve, or ROC_AUC. The random forest ended with the highest ROC_AUC score, being .928. This value is higher than I expected it to be when I started the project. I'm concerned it might be related to the class imbalance, if anything.
+The Astros sign-stealing scandal has sparked huge debate and discussion in the MLB community. The Astros used HD cameras to steal the opposing catcher's signs and live-streamed them to their dugout, where they would bang on a trash can to signal whether an off-speed pitch or fastball was coming next. This project attempts to predict whether the Astros will cheat using this method based on the state of the game. The hope is that these models will not only be able to predict cheating, but also provide the most impactful game conditions to warrant cheating. In an attempt to minimize data leakage, I removed the game date from the data fed to the models, since the team was much more likely to cheat on specific days for no apparent reason, with the goal is to keep the models fairly general so they are future proofed. Since the problem is a binary classification problem, two models were fitted: Logistic Regression and Random Forest Classifier. Both models used cross-validation with 5-folds. Since the classes are imbalanced, and accuracy is less trustworthy, the score metric I chose to report is the area under the receiver operator characteristic curve, or ROC_AUC. The random forest ended with the highest ROC_AUC score, being .902. This value is higher than I expected it to be when I started the project. I'm concerned it might be related to the class imbalance, if anything.
 
 ## Target, Baseline, and Imbalanced Classes
 
@@ -97,8 +97,8 @@ As the graph shows, the Random Forest Classifier is a more robust model in terms
     <td class="tg-c3ow">&nbsp;Baseline&nbsp;</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">&nbsp;0.926&nbsp;</td>
-    <td class="tg-c3ow">&nbsp;0.637&nbsp;</td>
+    <td class="tg-c3ow">&nbsp;0.902&nbsp;</td>
+    <td class="tg-c3ow">&nbsp;0.690&nbsp;</td>
     <td class="tg-c3ow">&nbsp;0.500&nbsp;</td>
   </tr>
 </table>
@@ -112,7 +112,7 @@ The confusion matrix is a very useful tool for visualizing the recall and precis
   <img src="https://raw.githubusercontent.com/mtoce/Build2-Project/master/cmatrix.png">
 </p>
 
-This confusion matrix shows that the model is 97% correct when predicting the Astros cheat when they are actually cheating. However, when they are not cheating the model is only 67% correct. In a real-world scenario, using this model would result in us incorrectly assuming they are cheating in many cases. This is not the worst outcome if we are an opposing team trying to protect our signs and pitcher, or even if we are an umpire trying to protect game integrity.
+This confusion matrix shows that the model is 97% correct when predicting the Astros cheat when they are actually cheating. However, when they are not cheating the model is only ~50% correct. In a real-world scenario, using this model would result in us incorrectly assuming they are cheating in many cases. This is not the worst outcome if we are an opposing team trying to protect our signs and pitcher, or even if we are an umpire trying to protect game integrity.
 
 
 By using the non-normalized confusion matrix, we can calculate the model's precision and recall scores. These two metrics are another option for score metrics for imbalanced classes.
@@ -138,8 +138,8 @@ By using the non-normalized confusion matrix, we can calculate the model's preci
     <td class="tg-c3ow">&nbsp;Recall&nbsp;</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">&nbsp;0.953&nbsp;</td>
-    <td class="tg-c3ow">&nbsp;0.956&nbsp;</td>
+    <td class="tg-c3ow">&nbsp;0.918&nbsp;</td>
+    <td class="tg-c3ow">&nbsp;0.969&nbsp;</td>
   </tr>
 </table>
 </center>
