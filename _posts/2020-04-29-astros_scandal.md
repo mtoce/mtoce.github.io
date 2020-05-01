@@ -39,7 +39,21 @@ This means our baseline is the value of the most frequent class, always predicti
 
 {% include cheat_by_batter.html %}
 
-This is an interactive graph that shows where cheating was used for batters in the Astros' lineup. Hover over the bars in the graph to see game-state information.
+This is an interactive graph that shows where cheating was used for batters in the Astros' lineup. Hover over the bars in the graph to see game-state information. Below is a code snippet showing the main syntax for creating this interactive graph using Altair.
+
+~~~
+chart = alt.Chart(batter_cheats, title="Astros Sign Stealing by Batter (2017 Season)", width=600, height=400).mark_bar().encode(
+    alt.X('game_date', title='Game Date', axis=alt.Axis(titleFont="Helvetica Neue")),
+    alt.Y('cheats', title='Cheating During At-Bat', axis=alt.Axis(titleFont="Helvetica Neue")),
+    alt.Color('batter', title='Batter',
+            scale=alt.Scale(
+            domain=batter_list,
+            range=['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf', 
+            '#b80667', '#07e32b', '#510382', '#874303', '#000000','#cc6060', '#8f98ff', '#ffedb3'])),
+    tooltip=['batter', 'opponent', 'pitch_category', 'pitch_type_code', 'runners_on_base', 'at_bat_event'],
+    ).interactive()
+~~~
+
 
 ## Model Choice and Results
 
