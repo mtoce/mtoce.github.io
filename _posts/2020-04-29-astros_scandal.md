@@ -10,8 +10,7 @@ The Astros sign-stealing scandal has sparked huge debate and discussion in the M
 
 ## Target, Baseline, and Imbalanced Classes
 
-The target for this problem is whether the Astros used a trash can to cheat during a batter's at-bat.
-The baseline for a binary classification problem such as this is the most frequent value in the target column.
+The target for this problem is whether the Astros cheated (1) or not (0). The baseline for a binary classification problem such as this is the most frequent value in the target column.
 
 ~~~
 df['cheats'].value_counts(normalize=True)
