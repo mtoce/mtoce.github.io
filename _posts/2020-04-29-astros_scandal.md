@@ -91,7 +91,7 @@ As the graph shows, the Random Forest Classifier is a more robust model in terms
   </tr>
   <tr>
     <td class="tg-c3ow">&nbsp;0.929&nbsp;</td>
-    <td class="tg-c3ow">&nbsp;0.675&nbsp;</td>
+    <td class="tg-c3ow">&nbsp;0.637&nbsp;</td>
     <td class="tg-c3ow">&nbsp;0.500&nbsp;</td>
   </tr>
 </table>
