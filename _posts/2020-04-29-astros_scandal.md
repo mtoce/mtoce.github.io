@@ -50,11 +50,8 @@ chart = alt.Chart(batter_cheats,
         alt.Y('cheats', title='Cheating During At-Bat', 
             axis=alt.Axis(titleFont="Helvetica Neue")),
         alt.Color('batter', title='Batter', scale=alt.Scale(
-            domain=batter_list,
-            range=['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', 
-            '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', 
-            '#17becf', '#b80667', '#07e32b', '#510382', '#874303', 
-            '#000000','#cc6060', '#8f98ff', '#ffedb3'])),
+                domain=batter_list,
+                range=color_list)),
         tooltip=['batter', 'opponent', 'pitch_category', 'pitch_type_code', 
         'runners_on_base', 'at_bat_event']).interactive()
 ~~~
