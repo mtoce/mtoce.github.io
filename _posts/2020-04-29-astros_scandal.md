@@ -85,13 +85,17 @@ As the graph shows, the Random Forest Classifier is a more robust model in terms
 
 The confusion matrix is a very useful tool for visualizing the recall and precision of a model. In this case of imbalanced classes, it makes understanding our model much easier.
 
-![Confusion_Matrix](https://raw.githubusercontent.com/mtoce/Build2-Project/master/cmatrix.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mtoce/Build2-Project/master/cmatrix.png">
+</p>
 
 This confusion matrix shows that the model is 97% correct when predicting the Astros cheat when they are actually cheating. However, when they are not cheating the model is only 67% correct. In a real-world scenario, using this model would result in us incorrectly assuming they are cheating in many cases. This is not the worst outcome if we are an opposing team trying to protect our signs and pitcher, or even if we are an umpire trying to protect game integrity.
 
 ## Model Permutation Importances
 
-
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mtoce/Build2-Project/master/permutation_importances.png">
+</p>
 
 ## Final Conclusions
 
