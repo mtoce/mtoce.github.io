@@ -37,6 +37,8 @@ Name: cheats, dtype: float64
 
 This means our baseline is the value of the most frequent class, always predicting 0, or not cheating.
 
+## Data Visualizations
+
 {% include cheat_by_batter.html %}
 
 This is an interactive graph that shows where cheating was used for batters in the Astros' lineup. Hover over the bars in the graph to see game-state information. Below is a code snippet showing the main syntax for creating this interactive graph using Altair.
@@ -55,7 +57,6 @@ chart = alt.Chart(batter_cheats,
         tooltip = ['batter', 'opponent', 'pitch_category', 'pitch_type_code', 
         'runners_on_base', 'at_bat_event']).interactive()
 ~~~
-
 
 ## Model Choice and Results
 
