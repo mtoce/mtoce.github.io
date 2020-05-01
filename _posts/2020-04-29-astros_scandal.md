@@ -55,24 +55,25 @@ Since the issue is binary classification, I chose a Logistic Regression for my l
 As the graph shows, the Random Forest Classifier is a more robust model, beating out both the Logistic Regression and baseline models.
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;}
-.tg td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:1px;color:#002b36;
-  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:1px;color:#fdf6e3;
-  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-ezbu{background-color:#eee8d5;border-color:inherit;text-align:center;vertical-align:top}
+.tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+.tg td{background-color:#fff;border-bottom-width:1px;border-color:#ccc;border-style:solid;border-top-width:1px;
+  border-width:0px;color:#333;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;
+  word-break:normal;}
+.tg th{background-color:#f0f0f0;border-bottom-width:1px;border-color:#ccc;border-style:solid;border-top-width:1px;
+  border-width:0px;color:#333;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;
+  padding:10px 5px;word-break:normal;}
 .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top;font-weight:bold}
-.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
 </style>
 <center>
 <table class="tg">
   <tr>
-    <th class="tg-amwm" colspan="3">ROC-AUC Score</th>
+    <th class="tg-7btt" colspan="3">ROC-AUC Score</th>
   </tr>
   <tr>
-    <td class="tg-ezbu">&nbsp;Random Forest&nbsp;</td>
-    <td class="tg-ezbu">&nbsp;Logistic Regression&nbsp;</td>
-    <td class="tg-ezbu">&nbsp;Baseline&nbsp;</td>
+    <td class="tg-c3ow">&nbsp;Random Forest&nbsp;</td>
+    <td class="tg-c3ow">&nbsp;Logistic Regression&nbsp;</td>
+    <td class="tg-c3ow">&nbsp;Baseline&nbsp;</td>
   </tr>
   <tr>
     <td class="tg-c3ow">&nbsp;0.929&nbsp;</td>
@@ -81,8 +82,6 @@ As the graph shows, the Random Forest Classifier is a more robust model, beating
   </tr>
 </table>
 </center>
-
-
 
 ## A Closer Look at Precision, Recall with the Confusion Matrix
 
