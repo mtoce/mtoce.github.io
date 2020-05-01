@@ -40,7 +40,7 @@ where 0 is not-cheating during the at-bat and 1 is cheating. This means our base
 
 This is an interactive graph that shows the number of at-bats where cheating was used for specific batters in the Astros' lineup. Hover over the bars in the graph to see game-specific information.
 
-## Class Imbalance and Choice of Model Score Metric
+## Class Imbalance & Choice of Model Score Metric
 
 Since the two classes are so imbalanced, accuracy is not a good choice for model scoring, therefore I chose to use the Area Under the Receiver Operator Characteristic Curve, also known as roc_auc. The ROC is a perfect metric because it tells us how much model is capable of being distinguished between classes.
 
