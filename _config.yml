@@ -27,7 +27,7 @@ navbar-links:
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "https://i.postimg.cc/W4TY74Lp/d98rx77-07a1c533-7770-4639-9181-f8121bdc71f7.jpg"
+avatar: "https://avatars.githubusercontent.com/u/30447847?s=400&u=cfb25b5ac014bb57c1da09e0e53c349993243129&v=4"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
@@ -72,8 +72,7 @@ social-network-links:
   facebook: "michael.toce"
   github: "mtoce"
   twitter: "Mike_Toce"
-  steam: BraveT
-  twitch: Brave_T_
+  
 #  spotify: michaeltoce
 #  reddit: 
 #  xing: yourname
